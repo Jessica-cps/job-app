@@ -47,15 +47,14 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/logo-job.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
+    top:33%;
     height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    width:100%;                    /* text area width */
     text-align:center;
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+    margin:auto;                   /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
 
@@ -69,17 +68,68 @@ body {
     }
 }
 
+/* Monitorica font */
+
+@font-face {
+    font-family: "Monitorica";
+    src: url(fonts/Monitorica-Rg.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Monitorica-Bold";
+    src: url(fonts/Monitorica-Bd.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Monitorica-Italic";
+    src: url(fonts/Monitorica-It.ttf) format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Monitorica-Bold-Italic";
+    src: url(fonts/Monitorica-BdIt.ttf) format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Antonio font */
+
+@font-face {
+    font-family: "Antonio";
+    src: url(fonts/Antonio-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Antonio-Bold";
+    src: url(fonts/Antonio-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Antonio-Light";
+    src: url(fonts/Antonio-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+
 h1 {
-    font-size:24px;
-    font-weight:bold;
+    font-size:56px;
+    font-weight:normal;
     margin:0px;
     overflow:visible;
     padding:0px;
     text-align:center;
+    font-family: Monitorica, sans-serif;
 }
 
 h2{
     font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
 }
 
 .event {
