@@ -24,36 +24,24 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family:'Open Sans', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
+}
+
+body.bg-black{
+    background: #404040;
 }
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo-job.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
-    top:33%;
-    height:50px;                   /* text area height */
+    top:15%;
     width:100%;                    /* text area width */
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:auto;                   /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
@@ -71,26 +59,27 @@ body {
 /* Monitorica font */
 
 @font-face {
-    font-family: "Monitorica";
-    src: url(fonts/Monitorica-Rg.ttf) format("truetype");
+    font-family: 'Monitorica';
+    src: url(Monitorica-Rg.otf) format("otf"),
+         url(Monitorica-Rg.ttf) format("truetype");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "Monitorica-Bold";
+    font-family: 'Monitorica-Bold';
     src: url(fonts/Monitorica-Bd.ttf) format("truetype");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: "Monitorica-Italic";
+    font-family: 'Monitorica-Italic';
     src: url(fonts/Monitorica-It.ttf) format("truetype");
     font-style: italic;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "Monitorica-Bold-Italic";
+    font-family: 'Monitorica-Bold-Italic';
     src: url(fonts/Monitorica-BdIt.ttf) format("truetype");
     font-style: italic;
     font-weight: bold;
@@ -100,7 +89,8 @@ body {
 
 @font-face {
     font-family: "Antonio";
-    src: url(fonts/Antonio-Regular.ttf) format("truetype");
+    src: url(fonts/Antonio-Regular.woff) format("woff"), 
+         url(fonts/Antonio-Regular.ttf) format("truetype");
     font-weight: normal;
 }
 
@@ -116,7 +106,11 @@ body {
     font-weight: lighter;
 }
 
-h1 {
+/* Open Sans font */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+h2{
     font-size:56px;
     font-weight:normal;
     margin:0px;
@@ -126,10 +120,47 @@ h1 {
     font-family: Monitorica, sans-serif;
 }
 
-h2{
+h3{
     font-weight: normal;
     font-family: 'Open Sans', sans-serif;
     font-size: 35px;
+    text-transform: none;
+    color: #6b6b6b;
+}
+
+body.bg-black p,
+body.bg-black span,
+body.bg-black a{
+    color: #b4b4b4;
+}
+
+body.bg-black a{
+    text-decoration: none;
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: .1em;
+}
+
+body.bg-black a:active{
+    color: #7b7a7a;
+}
+
+p{
+    font-size: 38px;
+    text-transform: none;
+}
+
+a{
+    font-size: 40px;
+    color: #48637b;
+}
+
+a:active{
+    color: #82a7bd;
+}
+
+.column{
+    display: inline-block;
+    margin: 0 1em;
 }
 
 .event {
@@ -166,4 +197,127 @@ h2{
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+.logo a{
+    text-decoration: none !important;
+    border: none !important;
+}
+
+/** LOGIN **/
+
+.login-initial{
+    position: relative;
+    margin-top: 40%;
+}
+
+.login-initial a{
+    text-decoration: none;
+}
+
+button{
+    padding: 1em;
+    border: 1px solid #48637b;
+    border-radius: 9px;
+    display: block;
+    margin: 1em auto;
+    width: 67%;
+    color: #48637b;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 34px;
+    background: none;
+}
+
+button:active,
+button.white-button:active,
+button.fb-button:active{
+    background-color: #48637b;
+    color: #fff;
+}
+
+button.white-button{
+    border-color: #fff;
+    color: #82a7bd;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 18px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 18px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 18px -5px rgba(0,0,0,0.75);
+}
+
+button.fb-button{
+    background-color: #042d65;
+    color: #fff;
+}
+
+.call-login{
+    text-transform: uppercase;
+    display: block;
+    font-size: 52px;
+}
+
+.login{
+    margin: auto;
+    width: 56em;
+}
+
+.login p{
+    margin-bottom: 0;
+}
+
+.login input{
+    font-size: 43px;
+    text-align: center;
+    padding: .6em;
+    margin: .1em;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #dedede;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.login input:focus{
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
+    transition: background-color 0.1s ease;
+    background-color: #545353;
+} 
+
+.login input[type="submit"]{
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #dedede;
+}
+
+button.submit{
+    margin-top: 4em;
+    border-color: #dedede;
+}
+
+button.submit:active{
+    background-color: #292929;
+    border-color: #292929;
+}
+
+.remember-pass{
+    font-size: 36px;
+}
+
+.column button.submit{
+    width: 9em;
+}
+
+.small-text-obs{
+    font-size: 29px;
+    display: block;
+    margin: auto;
+    text-align: left;
+    padding: 0 1.9em;
 }
