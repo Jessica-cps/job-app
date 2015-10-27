@@ -722,10 +722,11 @@ a[class^="look-"] span strong{
 }
 
 .look-ano-novo{
-    width: 100%;
+    width: 96%;
     height: 9em;
     display: block;
     background-image: url(../img/anonovo.jpg);
+    margin: 0 .5em .5em;
 }
 
 .look-balada,
@@ -734,16 +735,16 @@ a[class^="look-"] span strong{
 .look-praia,
 .look-tranquilo,
 .look-bar{
-    width: 49%;
+    width: 47%;
     height: 9em;
     float: left;
-    margin-top: 0.48em;
+    margin: 0 .5em .5em;
 }
 
-.look-balada,
-.look-amigas,
-.look-tranquilo{
-    margin-right: 0.48em;
+.look-boy,
+.look-praia,
+.look-bar{
+    margin: 0;
 }
 
 .look-balada{
