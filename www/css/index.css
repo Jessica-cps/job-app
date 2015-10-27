@@ -416,7 +416,7 @@ a[class^="icon-"] img{
 
 header a[class^="icon-"]{
     top: 9%;
-    width: 1.2em;
+    width: 1em;
     position: absolute;
 }
 
@@ -532,7 +532,7 @@ header a[class^="icon-"]:active img{
 
 /* menu button - label tag */
 .wrapper-menu .menu-btn {
-    position: fixed;
+    position: absolute;
     display: block;
     top: 7%;
     left: 7%;
@@ -688,4 +688,84 @@ header a[class^="icon-"]:active img{
     display: table;
     width: 100%;
     height: 100%;
+}    
+
+a[class^="look-"]{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a[class^="look-"]:active{
+    opacity: .5;
+}
+
+a[class^="look-"] span{
+    width: 5.5em;
+    height: 5.5em;
+    display: table;
+    position: relative; 
+    top: 17%;
+    left: 26%;
+    background-color: rgba(131, 161, 180, 0.52);
+    color: #fff;
+    transform: rotate(50deg);
+}
+
+a[class^="look-"]:first-of-type span{
+    left: 10%;
+}
+
+a[class^="look-"] span strong{
+    transform: rotate(-50deg);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.look-ano-novo{
+    width: 100%;
+    height: 9em;
+    display: block;
+    background-image: url(../img/anonovo.jpg);
+}
+
+.look-balada,
+.look-boy,
+.look-amigas,
+.look-praia,
+.look-tranquilo,
+.look-bar{
+    width: 49%;
+    height: 9em;
+    float: left;
+    margin-top: 0.48em;
+}
+
+.look-balada,
+.look-amigas,
+.look-tranquilo{
+    margin-right: 0.48em;
+}
+
+.look-balada{
+    background-image: url(../img/balada.jpg);
+}
+
+.look-boy{
+    background-image: url(../img/boy.jpg);
+}
+
+.look-amigas{
+    background-image: url(../img/shop.jpg);
+}
+
+.look-praia{
+    background-image: url(../img/praiaa.jpg);
+}
+
+.look-tranquilo{
+    background-image: url(../img/boa.jpg);
+}
+
+.look-bar{
+    background-image: url(../img/bar.jpg);
 }
