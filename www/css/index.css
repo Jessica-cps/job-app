@@ -136,7 +136,7 @@ h2{
 }
 
 .home h2{
-    letter-spacing: .1em;
+    letter-spacing: 0.02em;
 }
 
 h3{
@@ -375,6 +375,9 @@ input[type="checkbox"]{
 
 /* Header */
 
+header.main-header{
+    padding-top: 7%;
+}
 
 header{
     margin-bottom: 2em;
@@ -412,7 +415,7 @@ a[class^="icon-"] img{
 }
 
 header a[class^="icon-"]{
-    top: 5%;
+    top: 9%;
     width: 1.2em;
     position: absolute;
 }
@@ -531,7 +534,7 @@ header a[class^="icon-"]:active img{
 .wrapper-menu .menu-btn {
     position: fixed;
     display: block;
-    top: 3%;
+    top: 7%;
     left: 7%;
     display: block;
     width: 8%;
