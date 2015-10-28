@@ -50,6 +50,16 @@ body.bg-black{
     top: 7%;
 }
 
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
 /* Monitorica font */
 
 @font-face {
@@ -374,8 +384,9 @@ header{
 }
 
 h1.logo img{
-    width: 60%;
+    width: 29%;
     max-width: 690px;
+    margin: 0.8em;
 }
 
 h1.logo.logo-symbol img{
@@ -404,9 +415,13 @@ a[class^="icon-"] img{
     width: 100%;
 }
 
+a[class^="icon-"]:active img{
+    opacity: .5;
+}
+
 header a[class^="icon-"]{
     top: 9%;
-    width: 1em;
+    width: 1.1em;
     position: absolute;
 }
 
@@ -418,7 +433,8 @@ header a[class^="icon-"]:active img{
     right: 15%;
 }
 
-.icon-share{
+.icon-share,
+.icon-search{
     right: 6%;  
 }
 
@@ -731,10 +747,63 @@ a[class^="look-"] span strong{
     margin: 0 .5em .5em;
 }
 
+.product-box a{
+    position: relative;
+    width: 47%;
+    height: 12em;
+    float: left;
+    margin: 0 .5em .5em;
+    overflow: hidden;
+}
+
+.product-box a:nth-child(2n+2){
+    margin: 0;
+}
+
+.product-box a span{
+    position: absolute;
+    width: 5.5em;
+    height: 5.5em;
+    display: table;
+    top: 36%;
+    left: 29%;
+    background-color: rgba(131, 161, 180, 0.52);
+    color: #fff;
+    transform: rotate(50deg);
+}
+
+.product-box a span strong{
+    transform: rotate(-50deg);
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .look-boy,
 .look-praia,
-.look-bar{
+.look-bar,
+.look-moletons,
+.look-camisas,
+.look-shorts{
     margin: 0;
+}
+
+.content-inner.products a[class^="look-"]{
+    width: 47%;
+    height: 12em;
+    float: left;
+    margin: 0 .5em .5em;
+}
+
+.content-inner.products a[class^="look-"]:nth-child(2n+1){
+    margin: 0;
+}
+
+.content-inner.products a[class^="look-"] span{
+    top: 28%;
+}
+
+.content-inner.products a[class^="look-"]:first-of-type span{
+    left: 28%;
 }
 
 .look-balada{
@@ -759,4 +828,47 @@ a[class^="look-"] span strong{
 
 .look-bar{
     background-image: url(../img/bar.jpg);
+}
+
+.look-saias{
+    background-image: url(../img/produto_0000_1210_1930.jpg);
+}
+
+.look-moletons{
+    background-image: url(../img/produto_0002_1210_7362.jpg);
+}
+
+.look-camisetas{
+    background-image: url(../img/produto_0011_1210_9286.jpg);
+}
+
+.look-camisas{
+    background-image: url(../img/produto_0006_1210_8731.jpg);
+}
+
+.look-calcas{
+    background-image: url(../img/produto_0001_1210_5664.jpg);
+}
+
+.look-shorts{
+    background-image: url(../img/produto_0000_1210_1930.jpg);
+}
+
+.icon-category{
+    display: inline-block;
+    position: relative;
+    margin: 1em 1.7em;
+}
+
+a[class^="icon-category"] img{
+    width: 2em;
+}
+
+a[class^="icon-category"] span{
+    display: block;
+}
+
+.more-categories{
+    display: block;
+    clear: both;
 }
