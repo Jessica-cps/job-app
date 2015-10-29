@@ -806,6 +806,10 @@ a[class^="look-"] span strong{
     left: 28%;
 }
 
+.content-inner.products-inner img{
+    
+}
+
 .look-balada{
     background-image: url(../img/balada.jpg);
 }
@@ -871,4 +875,45 @@ a[class^="icon-category"] span{
 .more-categories{
     display: block;
     clear: both;
+}
+
+.info-product{
+    position: relative;
+    top: -14em;
+    padding: 0 3em;
+    background-image: linear-gradient(to bottom, transparent 0%, #F2F2F2 7%);
+}
+
+.info-product span{
+    display: block;
+}
+
+.price-product,
+.name-product{
+    font-size: 4em;
+}
+
+.name-product{
+    margin: 0.5em 0;
+}
+
+.size-product ul{ 
+    list-style: none;
+}
+
+.size-product ul li{
+    display: inline-block;
+} 
+
+.attr-size{
+    overflow: visible;
+    width: 18px;
+    padding: 0;
+    position: relative;
+}
+
+.size-product > li > label > input{
+    position: absolute;
+    top: 0;
+    left: -90000px;
 }
