@@ -966,6 +966,10 @@ a[class^="icon-category"] span{
     color: #fff;
 }
 
+.size-product input:focus + label.color-c8d94a{
+    background-color: rgba(130, 168, 189, 0.63) !important;
+}
+
 .size-product input:focus + label[class^="color-"]{
     background-image: url(../img/icon-check.svg);
 }
