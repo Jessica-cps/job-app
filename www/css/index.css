@@ -411,6 +411,13 @@ h1.logo.logo-symbol img{
     width: 1.2em;
 }
 
+.icon-favorite{
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    width: 15%;
+}
+
 [class^="icon-"] img{
     width: 100%;
 }
