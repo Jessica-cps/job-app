@@ -25,7 +25,7 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>JOB - Justo ou Barato</title>
     </head>
@@ -52,7 +52,12 @@
                     </nav>
                 <h1 class="logo"><img src="img/logo-job.png" alt="Logo JOB - Justo ou Barato"></h1>
                 <a class="icon-bag"><img src="img/icon-basket.svg"/> </a>
-                <a class="icon-search"><img src="img/icon-search.svg"/> </a>
+                <!--<a class="icon-search"><img src="img/icon-search.svg"/> </a>-->
+                <form class="search-container" action="//llamaswill.tumblr.com/search">
+                  <input id="search-box" type="text" class="search-box" name="q" />
+                  <label for="search-box"><span class="icon-search"><img src="img/icon-search.svg"/></span></label>
+                  <input type="submit" id="search-submit" />
+                </form>
                 </div>
             </header>
             <section class="content">
@@ -70,11 +75,11 @@
                         <a class="look-bar" href="#"><span><strong>Bar com a galera</strong></span></a>
                     </section>
                     <section class="more-categories">
-                        <a class="icon-category" href="#">
+                        <a class="icon-category active-icon">
                             <img src="img/icon-ocasioes.svg"/>
                             <span>Ocasiões</span>
                         </a>
-                        <a class="icon-category" href="#">
+                        <a class="icon-category" href="produtos.html">
                             <img src="img/icon-product.svg"/>
                             <span>Produtos</span>
                         </a>
