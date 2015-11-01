@@ -25,7 +25,7 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>JOB - Justo ou Barato</title>
     </head>
@@ -43,20 +43,24 @@
                     <label class="close-menu" for="checked"></label>
                     <nav class="drawer-menu">
                         <ul>
-                            <li><a href="#">Calçados</a></li>
-                            <li><a href="#">Roupas</a></li>
-                            <li><a href="#">Acessórios</a></li>
-                            <li><a href="#">Calçados</a></li>
-                            <li><a href="#">Roupas</a></li>
+                            <li><a href="quem-somos.html"><img src="img/icon-perfil.svg">Sobre</a></li>
+                            <li><a href="produtos.html"><img src="img/icon-product-white.svg">Produtos</a></li>
+                            <li><a href="loja.html"><img src="img/icon-ocasioes-white.svg">Ocasiões</a></li>
+                            <li><a href="novidades.html"><img src="img/icon-new-white.svg">Novidades</a></li>
+                            <li><a href="perfil.html"><img src="img/icon-perfil.svg">Perfil</a></li>
+                            <li><a href="amigos.html"><img src="img/icon-amigos.svg">Amigos</a></li>
+                            <li><a href="favoritos.html"><img src="img/icon-favorite-white.svg">Favoritos</a></li>
                         </ul>
                     </nav>
                 <h1 class="logo"><img src="img/logo-job.png" alt="Logo JOB - Justo ou Barato"></h1>
-                <a class="icon-bag"><img src="img/icon-basket.svg"/> </a>
+                <a href="sacola.html" class="icon-bag"><img src="img/icon-basket.svg"/> </a>
                 <!--<a class="icon-search"><img src="img/icon-search.svg"/> </a>-->
-                <form class="search-container" action="//llamaswill.tumblr.com/search">
-                  <input id="search-box" type="text" class="search-box" name="q" />
-                  <label for="search-box"><span class="icon-search"><img src="img/icon-search.svg"/></span></label>
-                  <input type="submit" id="search-submit" />
+                 <a class="icon-search" id="toggle-search"><img src="img/icon-search.svg"/> </a>
+                 <form id="search-form" action="">
+                    <fieldset>
+                        <input name="search-terms" type="search" placeholder="Search (for example: skirt)" />
+                    </fieldset>
+                    <input type="submit" value="Ok" />
                 </form>
                 </div>
             </header>
@@ -66,16 +70,16 @@
                         <h2 class="dashed-title"><span>Sua Ocasião</span></h2>
                     </header>
                     <section>
-                        <a class="look-ano-novo" href="#"><span><strong>Look ano novo</strong></span></a>
-                        <a class="look-balada" href="#"><span><strong>Balada</strong></span></a>
-                        <a class="look-boy" href="#"><span><strong>Pra sair com o boy</strong></span></a>
-                        <a class="look-amigas" href="#"><span><strong>Role com as amigas</strong></span></a>
-                        <a class="look-praia" href="#"><span><strong>Férias na praia</strong></span></a>
-                        <a class="look-tranquilo" href="#"><span><strong>Pra ficar de boa</strong></span></a>
-                        <a class="look-bar" href="#"><span><strong>Bar com a galera</strong></span></a>
+                        <a class="look-ano-novo" href="look-ano-novo.html"><span><strong>Look ano novo</strong></span></a>
+                        <a class="look-balada" href="look-balada.html"><span><strong>Balada</strong></span></a>
+                        <a class="look-boy" href="look-boy.html"><span><strong>Pra sair com o boy</strong></span></a>
+                        <a class="look-amigas" href="look-amigas.html"><span><strong>Role com as amigas</strong></span></a>
+                        <a class="look-praia" href="look-praia.html"><span><strong>Férias na praia</strong></span></a>
+                        <a class="look-tranquilo" href="look-boa.html"><span><strong>Pra ficar de boa</strong></span></a>
+                        <a class="look-bar" href="look-galera.html"><span><strong>Bar com a galera</strong></span></a>
                     </section>
                     <section class="more-categories">
-                        <a class="icon-category active-icon">
+                        <a class="icon-category active-icon" href="loja.html">
                             <img src="img/icon-ocasioes.svg"/>
                             <span>Ocasiões</span>
                         </a>
@@ -83,7 +87,7 @@
                             <img src="img/icon-product.svg"/>
                             <span>Produtos</span>
                         </a>
-                        <a class="icon-category" href="#">
+                        <a class="icon-category" href="novidades.html">
                             <img src="img/icon-new.svg"/>
                             <span>Novidades</span>
                         </a>
@@ -96,6 +100,32 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+        </script>
+        <script>
+        (function($) {
+
+        // Handle click on toggle search button
+        $('#toggle-search').click(function() {
+            $('#search-form, #toggle-search').toggleClass('open');
+            return false;
+        });
+
+        // Handle click on search submit button
+        $('#search-form input[type=submit]').click(function() {
+            $('#search-form, #toggle-search').toggleClass('open');
+            return true;
+        });
+
+        // Clicking outside the search form closes it
+        $(document).click(function(event) {
+            var target = $(event.target);
+      
+            if (!target.is('#toggle-search') && !target.closest('#search-form').size()) {
+                $('#search-form, #toggle-search').removeClass('open');
+            }
+        });
+
+        })(jQuery);
         </script>
     </body>
 </html>
