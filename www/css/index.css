@@ -418,8 +418,8 @@ button.yellow-button.favorite-button img{
 .icon-bag,
 .icon-search{
     position: absolute;
-    top: 9%;
-    width: 1.5em;
+    top: 8%;
+    width: 1.3em;
 }
 
 .icon-bag{
@@ -801,7 +801,7 @@ button.yellow-button.favorite-button img{
     display: table;
     width: 99%;
     height: auto;
-    margin-bottom: 23%;
+    margin-bottom: 16%;
 }    
 
 a[class^="look-"]{
@@ -979,7 +979,7 @@ a[class^="look-"] span strong{
 }
 
 a[class^="icon-category"] img{
-    width: 1.5em;
+    width: 1.3em;
 }
 
 a[class^="icon-category"] span{
