@@ -252,7 +252,7 @@ body.bg-black .dashed-title span{
 
 .login-initial{
     position: relative;
-    margin-top: 40%;
+    margin-top: 30%;
 }
 
 button{
@@ -1120,4 +1120,70 @@ button.yellow-button:hover{
 .content-text-box{
     text-align: left;
     padding: 0 5em;
+}
+
+.box-perfil{
+    display: table;
+    height: auto;
+    margin: 6em auto;
+}
+
+.box-perfil .image-perfil,
+.box-perfil .info-perfil{
+    float: left;
+    display: block;
+}
+
+.image-perfil{
+    width: 20em;
+    height: 20em;
+    display: block;
+    overflow: hidden;
+    margin: 0 5em;
+    border-radius: 11em;
+}
+
+.image-perfil img{
+    width: 100%;
+}
+
+.info-perfil{
+    text-align: left;
+}
+
+.box-perfil span{
+    display: block;
+    font-size: 41px;
+}
+
+.box-perfil .name-perfil{
+   font-size: 60px; 
+}
+
+.amigos .image-perfil{
+    width: 15em;
+    height: 15em;
+}
+
+.amigos .box-perfil .name-perfil{
+    font-size: 40px;
+}
+
+.amigos .box-perfil .info-perfil{
+    margin: 1em 0;
+}
+
+.amigos .box-perfil{
+    margin: 5em auto;
+}
+
+.amigos .favorite-button{
+    float: left;
+    margin: 0.5em 0;
+    width: 12em;
+}
+
+button.yellow-button.favorite-button img{
+    -webkit-filter: invert(0);
+    filter: invert(0);
 }
