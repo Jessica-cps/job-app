@@ -418,7 +418,7 @@ button.yellow-button.favorite-button img{
 .icon-bag,
 .icon-search{
     position: absolute;
-    top: 2.5em;
+    top: 2em;
     width: 1.3em;
 }
 
@@ -439,7 +439,7 @@ button.yellow-button.favorite-button img{
     width: 4em;
 }
 
-#toggle-search {
+/* #toggle-search {
   float: right;
   background-position: -60px 0;
 }
@@ -512,7 +512,7 @@ button.yellow-button.favorite-button img{
   background: #c6cacd;
   border: none;
   cursor: pointer;
-}
+}*/
 
 .active-icon{
     opacity: .3;
@@ -546,6 +546,11 @@ button.yellow-button.favorite-button img{
 .wrapper-menu nav ul li a img{
     width: 1.3em;
     vertical-align: middle;
+}
+
+.wrapper-menu nav ul li a:active img{
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
 
 .wrapper-menu ul {
@@ -633,7 +638,7 @@ button.yellow-button.favorite-button img{
     transition: all .8s;
 }
 
-.wrapper-menu .drawer-menu li a:hover {
+.wrapper-menu .drawer-menu li a:active {
     color: #1a1e24;
     background: #fff;
 }
@@ -686,7 +691,7 @@ button.yellow-button.favorite-button img{
     display: block;
     visibility: visible;
     opacity: 1;
-    font-size: 27px;
+    font-size: 2em;
 }
 
 .wrapper-menu .menu-btn:hover .bar {
@@ -799,7 +804,7 @@ button.yellow-button.favorite-button img{
 .loja .content-inner{
     background-color: #f2f2f2;
     display: table;
-    width: 99%;
+    width: 100%;
     height: auto;
     margin-bottom: 16%;
 } 
@@ -1139,7 +1144,7 @@ button.yellow-button:hover{
     height: 20em;
     display: block;
     overflow: hidden;
-    margin: 0 5em;
+    margin-right: 5em;
     border-radius: 11em;
 }
 
