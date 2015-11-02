@@ -802,7 +802,11 @@ button.yellow-button.favorite-button img{
     width: 99%;
     height: auto;
     margin-bottom: 16%;
-}    
+} 
+
+.content .content-inner .product-box a img{
+    width: 100%;
+}   
 
 a[class^="look-"]{
     background-size: cover;
