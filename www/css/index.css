@@ -54,8 +54,8 @@ body.bg-black{
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+       /* padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+       /* margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
 }
@@ -376,7 +376,7 @@ input[type="checkbox"]{
 /* Header */
 
 header.main-header{
-    padding-top: 7%;
+    padding-top: 4%;
 }
 
 .loja header h1.logo img{
@@ -418,7 +418,7 @@ button.yellow-button.favorite-button img{
 .icon-bag,
 .icon-search{
     position: absolute;
-    top: 3em;
+    top: 2.5em;
     width: 1.3em;
 }
 
@@ -647,7 +647,7 @@ button.yellow-button.favorite-button img{
 .wrapper-menu .menu-btn {
     position: absolute;
     display: block;
-    top: 7em;
+    top: 5em;
     left: 7%;
     display: block;
     width: 8%;
