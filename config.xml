@@ -6,7 +6,7 @@
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
-  <preference name="fullscreen" value="false"/>
+  <preference name="fullscreen" value="false"/> <!-- Change to false -->
   <preference name="StatusBarBackgroundColor" value="#000000" /> <!-- New line -->
   <preference name="webviewbounce" value="true"/>
   <preference name="prerendered-icon" value="true"/>
