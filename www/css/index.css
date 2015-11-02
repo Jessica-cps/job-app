@@ -602,7 +602,7 @@ button.yellow-button.favorite-button img{
     position: fixed;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 60%;
     height: 100%;
     padding: 16em 0;
     background: #222;
@@ -701,7 +701,7 @@ button.yellow-button.favorite-button img{
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 40%;
     height: 100vh;
     background: rgba(0,0,0,0);
     cursor: url(http://theorthodoxworks.com/demo/images/cross.svg),auto;
@@ -1157,7 +1157,7 @@ button.yellow-button:hover{
 }
 
 .box-perfil .name-perfil{
-   font-size: 60px; 
+   font-size: 4.5em; 
 }
 
 .amigos .image-perfil{
@@ -1166,7 +1166,7 @@ button.yellow-button:hover{
 }
 
 .amigos .box-perfil .name-perfil{
-    font-size: 40px;
+    font-size: 4em;
 }
 
 .amigos .box-perfil .info-perfil{
@@ -1180,7 +1180,7 @@ button.yellow-button:hover{
 .amigos .favorite-button{
     float: left;
     margin: 0.5em 0;
-    width: 12em;
+    width: 11.5em;
 }
 
 button.yellow-button.favorite-button img{
