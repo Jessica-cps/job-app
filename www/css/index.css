@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    /*background: url(../img/bg-triangle.jpg) center -153% repeat-x #fff;*/
+    background: url(../img/bg-triangle.jpg) center -153% repeat-x #fff;
     font-family:'Open Sans', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -35,7 +35,7 @@ body {
 }
 
 body.bg-black{
-    /*background: url(../img/bg-black-triangle.jpg) center -153% repeat-x #404040;*/
+    background: url(../img/bg-black-triangle.jpg) center -153% repeat-x #404040;
     background-color: #404040;
 }
 
@@ -381,7 +381,7 @@ header.main-header{
 }
 
 .loja header h1.logo img{
-    width: 30%;
+    width: 17%;
 }
 
 header{
@@ -389,9 +389,9 @@ header{
 }
 
 h1.logo img{
-    width: 49%;
+    width: 34%;
     max-width: 690px;
-    margin: 0.8em 0 0;
+    margin: 0.3em 0 0;
 }
 
 .logo a{
@@ -1028,27 +1028,27 @@ a[class^="icon-category"] span{
     margin: 0.5em 0;
 }
 
-.size-product{
+.section-circle{
     float: left;
 }
 
-.size-product:last-of-type{
+.section-circle:last-of-type{
     float: right;
 }
 
-.size-product ul{ 
+.section-circle ul{ 
     list-style: none;
 }
 
-.size-product ul li{
+.section-circle ul li{
     display: inline-block;
 } 
 
-.size-product strong{
+.section-circle strong{
     text-align: left;
 }
 
-.size-product li label{
+.section-circle li label{
     font-size: 3em;
     width: 2em;
     display: block;
@@ -1059,40 +1059,40 @@ a[class^="icon-category"] span{
     line-height: 2em;
 }
 
-.size-product input{
+.section-circle input{
     position: absolute;
     left: -999999%;
 }
 
 
-.size-product li .attr-size a:focus{
+.section-circle li .attr-size a:focus{
     color: #fff;
 }
 
-.size-product > li > label > input{
+.section-circle > li > label > input{
     position: absolute;
     top: 0;
     left: -90000px;
 }
 
-.size-product li label.color-82a8bd{
+.color-product li label.color-82a8bd{
     background-color: #82a8bd;
 }
 
-.size-product li label.color-fff{
+.color-product li label.color-fff{
     background-color: #fff;
 }
 
-.size-product li label.color-c8d94a{
+.color-product li label.color-c8d94a{
     background-color: #c8d94a;
 }
 
-.size-product input:focus + label.size-circle{
+.size-product input:focus + label{
     background-color: #000;
     color: #fff;
 }
 
-.size-product input:focus + label.color-circle{
+.color-product input:focus + label{
     opacity: .7;
     background-image: url(../img/icon-check.svg);
     background-repeat: no-repeat;
