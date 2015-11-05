@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background: url(../img/bg-triangle.jpg) center -146% repeat-x #fff;
+    /*background: url(../img/bg-triangle.jpg) center -146% repeat-x #fff;*/
     font-family:'Open Sans', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -35,7 +35,7 @@ body {
 }
 
 body.bg-black{
-    background: url(../img/bg-black-triangle.jpg) center -153% repeat-x #404040;
+    /*background: url(../img/bg-black-triangle.jpg) center -153% repeat-x #404040;*/
     background-color: #404040;
 }
 
@@ -287,7 +287,7 @@ button.white-button{
 }
 
 button.fb-button{
-    background-color: #042d65;
+    background-color: #3b5998;
     color: #fff;
 }
 
@@ -398,6 +398,75 @@ h1.logo img{
     border: none !important;
 }
 
+/* Facebook login */
+
+header.header-facebook{
+    background-color: #3b5998;
+    color: #fff;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+header.header-facebook span{
+    font-size: 1em;
+}
+
+header.header-facebook a{
+    color: #fff;
+    position: absolute;
+    left: 5%;
+}
+
+.left-icon-fb{
+    width: 24em;
+    height: 24em;
+    display: inline-block;
+    overflow: hidden;
+    margin: 14em 0 0;
+}
+
+.left-icon-fb img{
+    width: 100%;
+}
+
+.obs-fb p{
+    font-size: 1.4em;
+}
+
+.obs-fb span{
+    font-size: 1.1em;
+    display: block;
+    margin-top: 6em;
+}
+
+.content-inner.content-inner-fb{
+    background-color: #fff;
+}
+
+.button-bottom-fb a:last-of-type button{
+    float: right; 
+}
+
+.button-bottom-fb a:first-of-type button{
+    background-color: #FAFBFB;
+    border-color: #aaa;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.button-bottom-fb a button{
+    margin: 0.5em;
+    float: left;   
+    width: 35%;
+}
+
+.button-bottom-fb{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
 /* Icons */
 
 .icon-favorite{
@@ -407,7 +476,7 @@ h1.logo img{
     width: 15%;
 }
 
-button.yellow-button.favorite-button img{
+.favorite-button img{
     display: inline-block;
     width: 1.2em;
     vertical-align: bottom;
@@ -419,7 +488,7 @@ button.yellow-button.favorite-button img{
 .icon-bag,
 .icon-search{
     position: absolute;
-    top: 2em;
+    top: 1.7em;
     width: 1.3em;
 }
 
@@ -430,10 +499,6 @@ button.yellow-button.favorite-button img{
 .icon-share,
 .icon-search{
     right: 6%;  
-}
-
-.icon-search{
-    
 }
 
 .icon-search img{
@@ -653,7 +718,7 @@ button.yellow-button.favorite-button img{
 .wrapper-menu .menu-btn {
     position: absolute;
     display: block;
-    top: 6em;
+    top: 5em;
     left: 7%;
     display: block;
     width: 8%;
@@ -1110,8 +1175,17 @@ button.blue-button{
     color: #fff;
 }
 
-button.blue-button:hover{
+button.blue-button:active{
     background-color: #638090;
+}
+
+button.dark-blue-button{
+     background-color: #48637b;
+     color: #fff;
+}
+
+button.dark-blue-button:active{
+    background-color: #2D3D4C;
 }
 
 button.yellow-button{
@@ -1121,7 +1195,7 @@ button.yellow-button{
     position: relative;
 }
 
-button.yellow-button:hover{
+button.yellow-button:active{
     background-color: #E0980C;
 }
 
@@ -1185,9 +1259,4 @@ button.yellow-button:hover{
     float: left;
     margin: 0.5em 0;
     width: 11.5em;
-}
-
-.amigos button.yellow-button.favorite-button img{
-    -webkit-filter: invert(0);
-    filter: invert(0);
 }
