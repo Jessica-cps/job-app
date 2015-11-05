@@ -653,7 +653,7 @@ button.yellow-button.favorite-button img{
 .wrapper-menu .menu-btn {
     position: absolute;
     display: block;
-    top: 5em;
+    top: 6em;
     left: 7%;
     display: block;
     width: 8%;
@@ -666,7 +666,7 @@ button.yellow-button.favorite-button img{
     display: block;
     width: 80%;
     height: 4px;
-    margin: 1.3em .7em;
+    margin: 0.8em .7em;
     background: #000;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -762,7 +762,9 @@ button.yellow-button.favorite-button img{
 
 .wrapper-menu .check:checked ~ .menu-btn .bar.bottom {
     width: 56px;
+    position: absolute;
     top: 40px;
+    left: -1px;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
