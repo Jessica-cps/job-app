@@ -25,7 +25,7 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-image: url(../img/bg-job-top.png), url(../img/bg-job-bottom.png);
-    background-position: right -12%, left -163%;  
+    background-position: right -12%, left -139%;  
     background-repeat: no-repeat;
     font-family:'Open Sans', Helvetica, Arial, sans-serif;
     font-size:12px;
