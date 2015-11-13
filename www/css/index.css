@@ -24,7 +24,9 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    /*background: url(../img/bg-triangle.jpg) center -146% repeat-x #fff;*/
+    background-image: url(../img/bg-job-top.png), url(../img/bg-job-bottom.png);
+    background-position: right -12%, left -163%;  
+    background-repeat: no-repeat;
     font-family:'Open Sans', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
