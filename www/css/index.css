@@ -37,7 +37,6 @@ body {
 }
 
 body.bg-black{
-    /*background: url(../img/bg-black-triangle.jpg) center -153% repeat-x #404040;*/
     background-color: #404040;
 }
 
@@ -46,6 +45,7 @@ body.bg-black{
     width:100%;                    /* text area width */
     text-align:center;
     margin:auto;                   /* offset vertical: half of image height and text area height */
+    overflow-x: hidden;
 }
 
 .app.visual-page{
@@ -380,6 +380,7 @@ input[type="checkbox"]{
 
 header.main-header{
     padding-top: 4%;
+    background: #fff;
 }
 
 .loja header h1.logo img{
