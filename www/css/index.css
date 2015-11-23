@@ -170,6 +170,11 @@ a:active{
     margin: 0 1em;
 }
 
+hr{
+    margin: 8em 0;
+    border-color: #fff;
+}
+
 body.bg-black p,
 body.bg-black span,
 body.bg-black a{
@@ -341,6 +346,83 @@ button.fb-button{
     font-family: 'Open Sans', sans-serif;
     color: #dedede;
     background: none;
+}
+
+.login.cadastro input[type="text"], .login input[type="password"]{
+    width: 15em;
+}
+
+.login input[type="submit"]{
+    color: #404040;
+}
+
+.login.cadastro input[type="checkbox"],
+.login.cadastro input[type="radio"]{
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 1em;
+}
+
+.login.cadastro{
+    width: 72em;
+}
+
+.login.cadastro h4{
+    font-size: 5em;
+    font-family: Monitorica, Open Sans, sans-serif;
+}
+
+.login.cadastro p{
+    font-size: 2em;
+}
+
+.login.cadastro label{
+    font-size: 2em;
+}
+
+.login.cadastro li{
+    list-style: none;
+    width: 46%;
+    float: left;
+    margin: 1.4em;
+}
+
+.login.cadastro .choice-categories{
+    padding: 0;
+    display: table;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.login.cadastro .form-item-margin{
+    margin: 3em 0;
+}
+
+.choice-category img{
+    width: 5em;
+    display: block;
+    margin: 0 auto 1em;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.choice-category{
+    border: 1px solid #C4C2C2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+    background-color: #48637b;
+    color: #fff;
+}
+
+.choice-category li{
+    padding: 0;
+}
+
+.login.cadastro .choice-category label{
+    text-transform: uppercase;
+    margin: 0 0.2em;
+    font-size: 3em;
 }
 
 button.submit{
