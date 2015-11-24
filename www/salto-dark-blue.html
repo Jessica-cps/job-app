@@ -54,32 +54,67 @@
                     </nav>
                 <h1 class="logo"><a href="loja.html"><img src="img/symbol-job.png" alt="Logo JOB - Justo ou Barato"></a></h1>
                 <a href="sacola.html" class="icon-bag"><img src="img/icon-basket.svg"/> </a>
-                <!--<a class="icon-search"><img src="img/icon-search.svg"/> </a>-->
-                 <a class="icon-search" id="toggle-search"><img src="img/icon-search.svg"/> </a>
-                 <!--<form id="search-form" action="">
-                    <fieldset>
-                        <input name="search-terms" type="search" placeholder="Search (for example: skirt)" />
-                    </fieldset>
-                    <input type="submit" value="Ok" />
-                </form>-->
+                <a class="icon-search"><img src="img/icon-share.svg"/> </a>
                 </div>
             </header>
             <section class="content">
-                <div class="content-inner">
-                    <header>
-                        <h2 class="dashed-title"><span>Quem Somos</span></h2>
-                    </header>
-                    <section class="content-text-box"> 
-                        <div class="text-center">
-                            <img src="img/symbol-job.png" alt="Justo ou Barato"/>  
-                        </div>                  
-                        <p>A Justo ou Barato tem como finalidade incentivar empresas têxteis por meio de treinamentos a buscar e conhecer a certificação sustentável, tendo ainda como serviço, a revenda dos produtos das empresas certificadas cadastradas no site, atraves do nosso Marketplace.</p>
-                        <p>Conheça mais sobre o projeto na nossa <a href="https://www.facebook.com/job.justooubarato" target="_blank">pagina do Facebook</a></p>
+                <div class="content-inner products-inner">
+                    <section>
+                        <div class="slider-box">
+                          <div><img src="img/product-_0002_product_0004_sandals-587185_1920.jpg"/></div>
+                        </div>
+                        <div class="info-product">
+                            <span class="price-product">R$174</span>
+                            <span class="name-product">Salto Dark Blue</span>
+                            <p class="description-product">Saldália com tiras azuis. Salto decorado com tiras de couro sintetico.</p>
+                           <section class="circle-product">
+                                <section class="section-circle size-product">
+                                    <p>
+                                        <strong>Tamanho</strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <input class="size-button" id="size-p" type="radio" name="size" value="P">
+                                            <label for="size-p" class="size-circle">P</label>
+                                        </li>
+                                        <li>
+                                            <input class="size-button" id="size-m" type="radio" name="size" value="M">
+                                            <label for="size-m" class="size-circle">M</label>
+                                        </li>
+                                        <li>
+                                            <input class="size-button" id="size-g" type="radio" name="size" value="G">
+                                            <label for="size-g" class="size-circle">G</label>
+                                        </li>
+                                    </ul>
+                                </section>
 
-                        <p>Deseja participar do projeto e ter o seu espaço na nossa loja? <a href="http://www.justooubarato.com.br">Visite nosso site</a> e saiba como.</p>
+                                <section class="section-circle color-product">
+                                    <p>
+                                        <strong>Cor</strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <input class="color-button" id="color-82a8bd" class="color-82a8bd" type="radio" name="color" value="blue">
+                                            <label for="color-82a8bd" class="color-82a8bd color-circle"></label>
+                                        </li>
+                                        <li>
+                                            <input class="color-button" id="color-fff" class="color-fff" type="radio" name="color" value="white">
+                                            <label for="color-fff" class="color-fff color-circle"></label>
+                                        </li>
+                                        <li>
+                                            <label for="color-c8d94a" class="color-c8d94a color-circle"></label>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="section-button-product">
+                            <a href="#"><button class="blue-button">Comprar</button></a>
+                            <a href="favoritos.html"><button class="yellow-button favorite-button"><img src="img/icon-favorite.svg"/>Adc aos favoritos</button></a>
+                        </div>
                     </section>
                     <section class="more-categories">
-                        <a class="icon-category active-icon" href="loja.html">
+                        <a class="icon-category" href="loja.html">
                             <img src="img/icon-ocasioes.svg"/>
                             <span>Ocasiões</span>
                         </a>
@@ -93,6 +128,7 @@
                         </a>
                     </section>
                 </div>
+
             </section>
 
         </div>
@@ -100,32 +136,6 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-        </script>
-        <script>
-        (function($) {
-
-        // Handle click on toggle search button
-        $('#toggle-search').click(function() {
-            $('#search-form, #toggle-search').toggleClass('open');
-            return false;
-        });
-
-        // Handle click on search submit button
-        $('#search-form input[type=submit]').click(function() {
-            $('#search-form, #toggle-search').toggleClass('open');
-            return true;
-        });
-
-        // Clicking outside the search form closes it
-        $(document).click(function(event) {
-            var target = $(event.target);
-      
-            if (!target.is('#toggle-search') && !target.closest('#search-form').size()) {
-                $('#search-form, #toggle-search').removeClass('open');
-            }
-        });
-
-        })(jQuery);
         </script>
     </body>
 </html>

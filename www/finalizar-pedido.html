@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Justo ou Barato</title>
+    </head>
+    <body>
+        <div class="app loja sacola">
+            <header class="main-header">
+                <div class="wrapper-menu">
+                    <input type="checkbox" class="check" id="checked">
+                    <label class="menu-btn" for="checked">
+                        <span class="bar top"></span>
+                        <span class="bar middle"></span>
+                        <span class="bar bottom"></span>
+                        <span class="menu-btn-text">MENU</span>
+                    </label>
+                    <label class="close-menu" for="checked"></label>
+                    <nav class="drawer-menu">
+                        <ul>
+                            <li><a href="quem-somos.html"><img src="img/icon-perfil.svg">Sobre</a></li>
+                            <li><a href="produtos.html"><img src="img/icon-product-white.svg">Produtos</a></li>
+                            <li><a href="loja.html"><img src="img/icon-ocasioes-white.svg">Ocasiões</a></li>
+                            <li><a href="novidades.html"><img src="img/icon-new-white.svg">Novidades</a></li>
+                            <li><a href="perfil.html"><img src="img/icon-perfil.svg">Perfil</a></li>
+                            <li><a href="amigos.html"><img src="img/icon-amigos.svg">Amigos</a></li>
+                            <li><a href="favoritos.html"><img src="img/icon-favorite-white.svg">Favoritos</a></li>
+                        </ul>
+                    </nav>
+                <h1 class="logo"><a href="loja.html"><img src="img/symbol-job.png" alt="Logo JOB - Justo ou Barato"></a></h1>
+                <a href="sacola.html" class="icon-bag"><img src="img/icon-basket.svg"/> </a>
+                <a class="icon-search"><img src="img/icon-search.svg"/> </a>
+                </div>
+            </header>
+            <section class="content">
+                <div class="content-inner products">
+                    <div class="normal-form">
+                        <h3>Formas de pagamento</h3>
+
+                        <p><input type="text" name="numero-cartao" placeholder="Número do cartão de crédito"></p>
+                        <p><input type="text" name="nome-cartao" placeholder="Nome impresso no cartão"></p>
+
+                        <p><span>Escolha a bandeira do cartão:</span></p>
+                        <div class="box-flag">
+                          <label for="bandeira-visa" class="bandeira-cartao" id="bandeira-visa"></label>
+                          <input type="radio" name="bandeira-cartao" value="visa">
+                        </div>
+                        <div class="box-flag">
+                          <label for="bandeira-master" class="bandeira-cartao" id="bandeira-master"></label>
+                          <input type="radio" name="bandeira-cartao" value="mastercard">
+                        </div>
+                        <div class="box-flag">
+                          <label for="bandeira-visaelectron" class="bandeira-cartao" id="bandeira-visaelectron"></label>
+                          <input type="radio" name="bandeira-cartao" value="visaelectron">
+                        </div>
+                        <div class="box-flag">
+                          <label for="bandeira-discover" class="bandeira-cartao" id="bandeira-discover"></label>
+                          <input type="radio" name="bandeira-cartao" value="discover">
+                        </div>
+                        <p><span>Data de validade</span></p>
+                        <p><label for="mes-validade left">Mês</label></p>
+                        <p>
+                            <select name="mes-validade">
+                                <option value="janeiro">Janeiro</option>
+                                <option value="fevereiro">Fevereiro</option>
+                                <option value="março">Março</option>
+                                <option value="abril">Abril</option>
+                            </select>
+                        </p>
+                        <p><label for="ano-validade left">Ano</label></p>
+                        <p>
+                            <select name="ano-validade">
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                            </select>
+                        </p>
+                        <p><input type="text" name="codigo-cartao" placeholder="Código de segurança do cartão (CCV)"></p>
+                        <p><label for="num-parcelas left">Número de parcelas</label></p>
+                        <p>
+                          <select name="num-parcelas">
+                            <option value="1x130">1x de R$130,00</option>
+                            <option value="2x55">2x de R$65,00</option>
+                          </select>
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="normal-form revisao-pedido">
+                        <h3>4. Revisão do pedido</h3>
+
+                        <div class="photo-product-rev">
+                            <img src="img/product-_0010_product_0012-tatoo.jpg"/>
+                        </div>
+
+                        <div class="info-product-rev">
+                            <span>
+                                <strong>Camiseta Tattoo</strong>
+                                <span>Tamanho P</span>
+                            </span>
+
+                            <div class="labels-internal">
+                              <span class="label-internal-product">Quantidade:</span>
+                              <span>1</span>
+                            </div>
+                            <div class="labels-internal">
+                              <span class="label-internal-product">Valor unitário:</span>
+                              <span>R$130,00</span>
+                            </div>
+                            <div class="labels-internal">
+                              <span class="label-internal-product">Valor total:</span>
+                              <span>R$130,00</span>
+                            </div>
+                            <div class="labels-internal">
+                                <span> + </span>
+                                <input type="radio">
+                                Doação: R$ <input class="price-donation" type="number" min="0.10" step="0.10" value="1.00" />
+                            </div>
+                        </div>
+
+                        <p>
+                            <label for="cep">Digite o CEP:</label>
+                            <input type="text" name="cep" class="label-cep right">
+                        </p>
+
+                        <p><span class="left">Frete:</span> <span>R$3,00</span></p>
+                        <p><span class="left">Prazo de entrega:</span> <span>3 dias úteis</span></p>
+                        <p><span class="left">Total do pedido:</span> <span>R$133,00</span></p>
+                     
+                        <a href="sucess-pedido.html" class="buy-button right"><button>Finalizar pedido</button></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
