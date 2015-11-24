@@ -314,7 +314,7 @@ button.fb-button{
 }
 
 .login{
-    margin: 10em auto;
+    margin: 0 auto;
     width: 56em;
 }
 
@@ -357,7 +357,7 @@ button.fb-button{
     background: none;
 }
 
-.login.cadastro input[type="text"], .login input[type="password"]{
+.login.cadastro input[type="text"], .login.cadastro input[type="password"]{
     width: 15em;
 }
 
@@ -385,7 +385,7 @@ button.fb-button{
 
 .login.cadastro li{
     list-style: none;
-    width: 44%;
+    width: 45%;
     float: left;
     margin: 1.4em;
 }
