@@ -383,14 +383,6 @@ button.fb-button{
     margin: 1em 0;
 }
 
-.login.cadastro p{
-    font-size: 3em;
-}
-
-.login.cadastro label{
-    font-size: 2em;
-}
-
 .login.cadastro li{
     list-style: none;
     width: 44%;
