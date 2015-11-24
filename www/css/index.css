@@ -27,6 +27,7 @@ body {
     background-image: url(../img/bg-job-top.png), url(../img/bg-job-bottom.png);
     background-position: right -12%, left -139%;  
     background-repeat: no-repeat;
+    background-color: #F2F2F2;
     font-family:'Open Sans', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -34,6 +35,10 @@ body {
     padding:0px;
     width:100%;
     overflow-x: hidden; 
+}
+
+body.bg-white{
+    background-color: #fff;
 }
 
 body.bg-black{
@@ -356,7 +361,7 @@ button.fb-button{
     width: 15em;
 }
 
-.login input[type="submit"]{
+.login.cadastro input[type="submit"]{
     color: #404040;
 }
 
@@ -374,6 +379,8 @@ button.fb-button{
 .login.cadastro h4{
     font-size: 5em;
     font-family: Monitorica, Open Sans, sans-serif;
+    width: 100%;
+    margin: 1em 0;
 }
 
 .login.cadastro p{
@@ -482,6 +489,10 @@ button.fb-button{
     border: 1px solid #aaa;
 }
 
+.normal-form p span{
+    font-size: 0.5em;
+}
+
 .normal-form select{
     width: 100%;
 }
@@ -500,6 +511,7 @@ button.fb-button{
 
 .photo-product-rev{
     display: inline-block;
+    vertical-align: top;
     width: 46%;
     margin-right: 1.5em;
 }
@@ -513,6 +525,10 @@ button.fb-button{
     width: 50%;
     font-size: 3em;
     line-height: 1.3em;
+}
+
+.normal-form input.price-donation{
+    width: 82%;
 }
 
 button.submit{
@@ -559,14 +575,11 @@ header.main-header{
     width: 17%;
 }
 
-header{
-    margin-bottom: 2em;
-}
 
 h1.logo img{
     width: 44%;
     max-width: 690px;
-    margin: 0.3em 0 0;
+    margin: 0.1em 0;
 }
 
 .logo a{
@@ -880,7 +893,7 @@ header.header-facebook a{
 }
 
 .wrapper-menu .drawer-menu li a:active {
-    color: #1a1e24;
+    color: #404040;
     background: #fff;
 }
 
@@ -1054,7 +1067,7 @@ header.header-facebook a{
     display: table;
     width: 100%;
     height: auto;
-    margin-bottom: 16%;
+    padding-bottom: 16%;
 } 
 
 .content .content-inner .product-box a img{
@@ -1078,9 +1091,10 @@ a[class^="look-"] span{
     position: relative; 
     top: 17%;
     left: 23%;
-    background-color: rgba(131, 161, 180, 0.52);
+    background-color: rgba(131, 161, 180, 0.83);
     color: #fff;
-    transform: rotate(50deg);
+    transform: rotate(45deg);
+    border-radius: 13%;
 }
 
 a[class^="look-"]:first-of-type span{
@@ -1088,7 +1102,7 @@ a[class^="look-"]:first-of-type span{
 }
 
 a[class^="look-"] span strong{
-    transform: rotate(-50deg);
+    transform: rotate(-45deg);
     display: table-cell;
     vertical-align: middle;
 }
@@ -1113,10 +1127,6 @@ a[class^="look-"] span strong{
     margin: 0 .5em .5em;
 }
 
-.product-box{
-    display: table;
-    height: auto;
-}
 
 .product-box a{
     position: relative;
@@ -1206,27 +1216,27 @@ a[class^="look-"] span strong{
 }
 
 .look-saias{
-    background-image: url(../img/produto_0000_1210_1930.jpg);
+    background-image: url(../img/product-_0006_product_0008_cute-955783_1920.jpg);
 }
 
-.look-moletons{
-    background-image: url(../img/produto_0002_1210_7362.jpg);
+.look-calcados{
+    background-image: url(../img/product-_0008_product_0010_boots-181744_1280.jpg);
 }
 
 .look-camisetas{
-    background-image: url(../img/produto_0011_1210_9286.jpg);
+    background-image: url(../img/product-_0010_product_0012-tatoo.jpg);
 }
 
-.look-camisas{
-    background-image: url(../img/produto_0006_1210_8731.jpg);
+.look-vestidos{
+    background-image: url(../img/product-_0009_product_0011_women-656074_1920.jpg);
 }
 
-.look-calcas{
-    background-image: url(../img/produto_0001_1210_5664.jpg);
+.look-sandalias{
+    background-image: url(../img/product-_0002_product_0004_sandals-587185_1920.jpg);
 }
 
-.look-shorts{
-    background-image: url(../img/product_0014_1210_6137.jpg);
+.look-blusas{
+    background-image: url(../img/product-_0004_product_0006_fashion-694837_1920.jpg);
 }
 
 .icon-category{
