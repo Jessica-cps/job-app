@@ -578,7 +578,7 @@ header.main-header{
 
 
 h1.logo img{
-    width: 44%;
+    width: 33%;
     max-width: 690px;
     margin: 0.1em 0;
 }
@@ -1128,11 +1128,10 @@ a[class^="look-"] span strong{
     margin: 0 .5em .5em;
 }
 
-
 .product-box a{
     position: relative;
     width: 47%;
-    height: 12em;
+    height: 11em;
     float: left;
     margin: 0 .5em .5em;
     overflow: hidden;
