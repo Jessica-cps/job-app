@@ -45,6 +45,10 @@ body.bg-black{
     background-color: #404040;
 }
 
+body.bg-black.bg-cadastro{
+    background-position: right -12%, left -1305%;
+}
+
 /* Portrait layout (default) */
 .app {
     width:100%;                    /* text area width */
@@ -358,7 +362,7 @@ button.fb-button{
 }
 
 .login.cadastro input[type="text"], .login.cadastro input[type="password"]{
-    width: 15em;
+    width: 14em;
 }
 
 .login.cadastro input[type="submit"]{
@@ -526,6 +530,11 @@ button.fb-button{
 button.submit{
     margin-top: 4em;
     border-color: #dedede;
+}
+
+.cadastro button.submit{
+    margin-top: 0;
+    margin-bottom: 2em;
 }
 
 button.submit:active{
